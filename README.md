@@ -1,5 +1,6 @@
 # Machine Learning with Modified Fuchs Model (Improved)
-This is a repository that contains all the code used from the paper *Towards Automated Learning with Ultra-Intense Laser Systems Operating in the kHz Repetition Rate Regime*. It contains the ML model training python scripts, plotting/analysis jupyter notebooks, and dataset generation files. This is a continuation on a [previous work](https://arxiv.org/abs/2307.16036) that is currently (October 2024) under review at [Contributions to Plasma Physics](https://onlinelibrary.wiley.com/journal/15213986).
+This is a repository that contains all the code used from the paper *Towards Automated Learning with Ultra-Intense Laser Systems Operating in the kHz Repetition Rate Regime*. It contains the ML model training python scripts, plotting/analysis jupyter notebooks, and dataset generation files. This is a continuation on a [previous work](https://arxiv.org/abs/2307.16036) that is currently (October 2024) under review at [Contributions to Plasma Physics](https://onlinelibrary.wiley.com/journal/15213986). 
+- Please use the attached `environment.yml` or `environment_nobuilds.yml` files to create a conda environment that can be used to run all the code
 
 ## Data Set Generation
 The synthetic modified Fuchs data sets are generated with the following notebook in the *datasets* directory
