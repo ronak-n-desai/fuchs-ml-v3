@@ -5,9 +5,10 @@ This is a repository that contains all the code used from the paper *Towards Aut
 ## Data Set Generation
 The synthetic modified Fuchs data sets are generated with the following notebook in the *datasets* directory
 - `Fuchs_Data_Generation_v5.0.ipynb`
-- For Appendix B dataset generation
- +  `campaign_1_generation.ipynb`
- +  `campaign_2_generation.ipynb`
+ 
+For Appendix B dataset generation
+- `campaign_1_generation.ipynb`
+- `campaign_2_generation.ipynb`
 
 ## Campaigns
 Use `campaign_1_generation.cpp` and `campaign_2_generation.cpp` to generate the split campaign datasets described in Appendix B in the *campaigns* directory
