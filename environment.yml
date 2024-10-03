@@ -1,4 +1,4 @@
-name: ldiaml
+name: fuchs-ml
 channels:
   - gpytorch
   - pytorch
@@ -230,4 +230,4 @@ dependencies:
       - skorch==0.15.0
       - tabulate==0.9.0
       - tqdm==4.66.1
-prefix: /users/PAS2038/felice27/miniconda3/envs/ldiaml
+# prefix: /users/PAS1066/ronakndesai/miniconda3/envs/fuchs-ml

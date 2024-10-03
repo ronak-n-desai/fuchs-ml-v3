@@ -1,0 +1,9 @@
+*.h5
+*.sh
+hyperparameters/results_old
+*.out
+models/old_nn
+models/old_svgp
+campaigns/campaign_1_generation_grid.cpp
+*.pth 
+*.sav

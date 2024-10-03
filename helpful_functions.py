@@ -40,7 +40,7 @@ def log_inverse(X):
 
 class OutputLogTransformer(BaseEstimator, TransformerMixin):
     def __init__(self):
-        self._estimator = StandardScaler()
+        self._estimator = MinMaxScaler()
     def fit(self, y):
         y_copy = y.copy()
         y_copy = np.log(y_copy)
@@ -59,7 +59,7 @@ class OutputLogTransformer(BaseEstimator, TransformerMixin):
 
 class InputLogTransformer(BaseEstimator, TransformerMixin):
     def __init__(self):
-        self._estimator = StandardScaler()
+        self._estimator = MinMaxScaler()
     def fit(self, X):
         X_copy = X.copy()
         X_copy = log_transform(X_copy)
