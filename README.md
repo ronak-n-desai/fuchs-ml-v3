@@ -4,7 +4,7 @@ This is a repository that contains all the code used from the paper *Towards Aut
 
 ## Data Set Generation
 The synthetic modified Fuchs data sets are generated with the following notebook in the *datasets* directory
-- `Fuchs_Data_Generation_v5.0.ipynb`
+- `Fuchs_Data_Generation_v5.ipynb`
  
 For Appendix B dataset generation
 - `campaign_1_generation.ipynb`
