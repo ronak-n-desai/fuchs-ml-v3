@@ -21,7 +21,7 @@ from helpful_functions import InputLogTransformer, OutputLogTransformer, build_n
 import time
 
 spectrum = False
-noise = 30
+noise = 10
 if spectrum:
     num_outputs = 25
     identifier = 'spectrum'

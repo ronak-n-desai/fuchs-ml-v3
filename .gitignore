@@ -7,3 +7,5 @@ models/old_svgp
 campaigns/campaign_1_generation_grid.cpp
 *.pth 
 *.sav
+train/nn/results/noise30
+
