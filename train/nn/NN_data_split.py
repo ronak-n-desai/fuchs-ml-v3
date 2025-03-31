@@ -57,7 +57,9 @@ avg_mape_uncorrected_list = []
 avg_mse_uncorrected_list = []
 point_list = []
 
-df = df.sample(frac=1,random_state=42).reset_index(drop=True)
+seed = 43
+
+df = df.sample(frac=1,random_state=seed).reset_index(drop=True)
 X = np.array(df[input_list],dtype=datype)
 y = np.array(df[output_list],dtype=datype)
 data_fractions = np.linspace(0, 1, 7)[1:]
@@ -72,9 +74,10 @@ n_neurons = 64
 lr = 1e-2
 gamma = 0.9
 
+
 for frac in data_fractions:
-    np.random.seed(42)
-    torch.manual_seed(42)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
     start_time = time.time()
     num_pts = int(num_pts_tot * frac + 0.5)
     num_train_pts = int(0.8 * num_pts + 0.5)
@@ -139,4 +142,4 @@ df = pd.DataFrame({'points': point_list, 'time': time_list,
                    'avg mape corrected': avg_mape_corrected_list, 'avg mape uncorrected': avg_mape_uncorrected_list, 
                    'avg mse corrected': avg_mse_corrected_list, 'avg mse uncorrected': avg_mse_uncorrected_list})
 
-df.to_csv(f'results/NN_data_split.csv', index=False)
+df.to_csv(f'results/NN_data_split_{seed}.csv', index=False)
